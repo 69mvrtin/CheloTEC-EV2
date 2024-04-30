@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+
+  <!-- ini encabezado -->
+  <span class="sombra">
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">CheloTEC</a>
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="imagenes/menu.png" class="menu-icono" alt="menu"></label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="componentes.html">Productos</a></li>
+            <li><a href="#">Seguimiento</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+        <div>
+
+          <!-- carrito -->
+          <ul>
+            <li class="submenu">
+              <img src="imagenes/car.svg" id="img-carrito" alt="">
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="header-content container">
+            <h1>CheloTEC</h1>
+            <p>
+              Bienvenido a la CheloTEC en esta tienda encontraras Computadoras Gamers armadas, componentes 
+              para tus armados tambien ecnontraras Servicios de armados de pc por la suma de 19.990
+              el tiempo de armado dependera del la disponibilidad de nuetros tecnicos.
+              todos nuestros tecnicos esta certificados por lo cual no deberias tener problema con el ensamble
+
+            </p>
+            <div class="botons">
+              <a href="#" class="btn-1">Mas Informacion</a>
+              <a href="#" class="btn-1">Menu</a>
+            </div>
+      </div>
+    </header>
+  </span>
+  <!-- fin encabezado -->>
+
+
+    <!-- Ttitulo 1 -->
+    <section class="recetas container">
+      <div class="recetas-1">
+        <h3>Tipos de PCS Gamers</h3>
+        <hr>
+        <p></p>
+      </div>
+      <div class="recetas-2">
+        <h2>Computadores<br>Mas<br>Vendidos</h2>
+      </div>
+    </section>
+
+
+    <!-- Ini platillos 1 -->
+    <section class="platillos container" id="lista">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>PC Gamer Silver</h3>
+              <p class="precio">$400.000</p>
+              <img src="imagenes/pc basica.png" alt="">
+              <p>
+                Procesador: Ryzen 3 3200G APU 
+                Ram: 8 GB, almacenamiento: 512 M.2
+
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar al Carrito</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>PC Gamer Gold</h3>
+              <p class="precio">$999.990</p>
+              <img src="imagenes/pc media.png" alt="">
+              <p>
+                Procesador: Ryzen 5 5600, Tarjeta Grafica RTX 4060,
+                Ram: 16 GB, almacenamiento: 1TB M.2 + 120GB ssd
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar al Carrito</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>PC Gamer Diamond</h3>
+              <p class="precio">$1.800.000</p>
+              <img src="imagenes/pc gama alta.png" alt="">
+              <p>
+                Procesador: ryzen 7 5800X, 
+                Tarjeta Grafica RTX 3080,
+                Ram: 16 GB, almacenamiento: 1TB M.2
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar al Carrito</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3>PC Gamer Ruby </h3>
+              <p class="precio">$2.200.000</p>
+              <img src="imagenes/pc ruby.png" alt="">
+              <p>
+                Procesador: Ryzen 9 5900X, 
+                Tarjeta Grafica: RTX 4090,
+                Ram: 32 GB, almacenamiento: 1TB M.2 + 1TB SSD
+              </p>
+              <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+    <!-- Fin productos 1 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- Ttitulo 2 -->
+    <section class="recetas container">
+      <div class="recetas-2">
+        <h2> <br> Componentes <br> de PCs</h2>
+      </div>
+      <div class="recetas-1">
+        <h3>Tipos de componentes</h3>
+        <hr>
+        <p></p>
+      </div>
+
+
+    </section>
+
+
+        <!-- Productos2 -->
+    <section class="platillos container" id="lista-2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3 class="c1">Procesador Ryzen 5 5600</h3>
+              <p class="precio">$155.500</p>
+              <img src="imagenes/proce.jpg" alt="">
+              <p class="c2">N.° de núcleos de CPU: 6/
+                N.° de subprocesos: 12/
+                Reloj de aumento máx.: Hasta 4.4GHz/
+                Reloj base:3.5GHz/
+
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="5"> Agregar al Carrito</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3 class="c1">MSI RTX 4060 8GB </h3>
+              <p class="precio">$350.000</p>
+              <img src="imagenes/grafica4060.jpg" alt="">
+              <p class="c2">TARJETA DE VIDEO GEFORCE MSI RTX 4060 VENTUS 2X BLACK 8G OC PCIEX P/N RTX 4060 VENTUS 2X BLACK 8G OC
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="6"> Agregar al Carrito</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3 class="c1">Placa Madre</h3>
+              <p class="precio">$120.000</p>
+              <img src="imagenes/madre.jpg" alt="">
+              <p class="c2">Placa Madre Gigabyte B550M K, Socket AM4, SATA 6Gb/s, Micro-ATX, USB 3.1 Gen 1, PCIe 4.0
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="7"> Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="platillo">
+              <h3 class="c1">Memoria Ram</h3>
+              <p class="precio">$30.000</p>
+              <img src="imagenes/ramrgb.jpg" alt="">
+              <p class="c2">MEMORIA KINGSTON FURY BEAST 8GB 3200 MT/S DDR4 RGB P/N KF432C16BB2A/8
+              </p>
+              <a href="#" class="agregar-carrito btn-3" data-id="8"> Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producotos 2 -->
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+        <!-- pie de la pagina -->
+        <section class="contacto" id="contacto">
+          <div class="contenedor-contacto">
+              <h2>Contacto</h2>
+              <div class="fila">
+                  <div class="col">
+                      <div class="info">
+                          <h3>Email:</h3>
+                          <p>CheloTEC2024@gmail.com</p>
+                      </div>
+                      <div class="info">
+                          <h3>Teléfono:</h3>
+                          <p>+56 940974175</p>
+                      </div>
+                      <div class="info">
+                          <h3>País</h3>
+                          <p>Chile</p>
+                      </div>
+                      <div class="info">
+                          <h3>Ciudad:</h3>
+                          <p>Santiago</p>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <input type="text" placeholder="Nombre...">
+                      <input type="text" placeholder="Correo...">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                      <input type="submit" value="Enviar" class="btn">
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <footer>
+          <p>Derechos reservados</p>
+      </footer>
+        <!-- Fin pie de la pagina -->
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
