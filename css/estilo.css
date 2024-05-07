@@ -41,6 +41,29 @@ body{
     z-index: 1000;
 }
 
+.button-style {
+    background-color: transparent; /* Color de fondo */
+    border: 2px solid white; /* Sin bordes */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración en el texto */
+    display: inline-block;
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen exterior */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+.button-style:active {
+    transform: scale(0.95); /* Reduce el tamaño del botón al presionarlo */
+}
+
+.button-style a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Sin decoración en el texto del enlace */
+}
+
 .logo{
     color: #ffffff;
     font-size: 25px;
@@ -509,6 +532,9 @@ footer{
         margin-bottom: 15px;
     }
     
+    .button-style {
+        font-size: 12px;
+    }
     
 }
 
