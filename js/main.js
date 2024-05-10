@@ -21,6 +21,10 @@ if(document.readyState == "loading"){
     ready();
 }
 
+
+
+
+
 //MAKING FUNCTION 
 function ready(){
     //reamve item from cart
