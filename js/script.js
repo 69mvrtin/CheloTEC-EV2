@@ -103,7 +103,6 @@ document.querySelector('#pagar-carrito').addEventListener('click', function(even
     event.preventDefault();
 
     // Aquí puedes agregar el código para manejar la acción de pagar
-    // Por ejemplo, puedes mostrar un mensaje de confirmación y luego vaciar el carrito
     if(confirm('¿Estás seguro de que quieres pagar?')) {
         document.querySelector('#lista-carrito tbody').innerHTML = '';
         alert('Gracias por tu compra!');
@@ -112,43 +111,21 @@ document.querySelector('#pagar-carrito').addEventListener('click', function(even
 
 
 
-
-
-
-
-
-$(document).ready(function() {
-    $('col').validate({ // reemplace 'form' con el ID de tu formulario si es necesario
-        rules: {
-            nombre: {
-                required: true,
-                minlength: 2
-            },
-            correo: {
-                required: true,
-                email: true
-            },
-            mensaje: {
-                required: true,
-                minlength: 10
-            }
+$("#formValidation").validate({
+    rules:{
+        nombre:{
+            minlength:3
         },
-        messages: {
-            nombre: {
-                required: "Por favor, introduce tu nombre",
-                minlength: "Tu nombre debe tener al menos 2 caracteres"
-            },
-            correo: {
-                required: "Por favor, introduce tu correo electrónico",
-                email: "Por favor, introduce un correo electrónico válido"
-            },
-            mensaje: {
-                required: "Por favor, introduce tu mensaje",
-                minlength: "Tu mensaje debe tener al menos 10 caracteres"
-            }
+        correo:{
+            required:true,
+            email:true
         },
-        submitHandler: function(form) {
-            form.submit();
+        mensaje:{
+            required:true,
+            minlength:10
         }
-    });
-}); 
+    },
+    submitHandler: function(form) {
+    form.submit();
+    }
+});
