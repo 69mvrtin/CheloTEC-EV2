@@ -9,29 +9,31 @@
     list-style: none;
 }
 /*fuente*/
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
+    margin: 0;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.header{
-    background:linear-gradient(to right, #6b008b, #43009b);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 85%, 0 50%);
+.header {
+    background: linear-gradient(to right, #6b008b, #43009b);
     height: 110vh;
     padding: 0 20px;
     display: flex;
     position: relative;
 }
-.sombra{
-    filter:drop-shadow(0em 30px 20px #8153ff);
+
+.sombra {
+    filter: drop-shadow(0em 30px 20px #8153ff);
 }
 
 .menu {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -41,7 +43,7 @@ body{
     z-index: 1000;
 }
 
-.logo{
+.logo {
     color: #ffffff;
     font-size: 25px;
     font-weight: 800;
@@ -68,8 +70,8 @@ body{
     display: none;
 }
 
-.menu-icono{
-    width: 25px;
+.menu-icono {
+    display: none;
 }
 
 .menu-label {
@@ -77,9 +79,8 @@ body{
     display: none;
 }
 
-.submenu{
+.submenu {
     position: relative;
-
 }
 
 .submenu #carrito {
@@ -96,10 +97,9 @@ body{
     background-color: #ffffff;
     padding: 20px;
     min-width: 400px;
-    min-width: 400px;
 }
 
-table{
+table {
     width: 100%;
 }
 
@@ -139,16 +139,16 @@ td {
     color: #DFDDE0;
     margin-bottom: 80px;
 }
+
 .botons {
     display: flex;
     justify-content: center;
 }
 
-
 .btn-1 {
     display: inline-block;
     width: 200px;
-    margin:  20px 10px;
+    margin: 20px 10px;
     padding: 12px 0;
     border-radius: 25px;
     color: #ffffff;
@@ -167,16 +167,11 @@ td {
     top: 0;
 }
 
-
 .Socials-1 img {
     width: 20px;
     height: 20px;
     margin-bottom: 20px;
 }
-
-
-
-
 
 /*RECETAS*/
 .recetas {
@@ -187,6 +182,7 @@ td {
 .recetas-1 {
     width: 50%;
 }
+
 .recetas-1 h3 {
     font-size: 18px;
     color: #aa00ff;
@@ -201,19 +197,17 @@ td {
     border: 1px solid #312F32;
 }
 
-.recetas-2 {
-    text-align: center;
 
-}
 
-.recetas-2 h2 {
-    font-size: 50px;
-    line-height: 55px;
-    color: #aa00ff;
-}
+.recetas-2 h2 { 
+        text-align: center;
+        color: #a800ff;
+        font-size: 50px;
+        line-height: 55px;
+    }
+
 
 /*PLATILLOS*/
-
 .platillos {
     padding: 50px 0;
 }
@@ -231,23 +225,25 @@ td {
 .swiper-button-prev::after {
     font-size: 25px;
 }
+
 .swiper-button-next::after {
     font-size: 25px;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     color: #aa00ff;
 }
+
 .swiper-button-next {
     color: #aa00ff;
 }
 
-
-.swiper-pagination-bullet{
-    background-color:#DFDDE0;
+.swiper-pagination-bullet {
+    background-color: #DFDDE0;
     opacity: 3;
     top: 50px;
 }
+
 .swiper-pagination-bullet-active {
     background-color: #000000;
 }
@@ -257,12 +253,15 @@ td {
     flex-direction: column;
     align-items: center;
     padding: 0 50px;
+    text-align: center;
 }
+
 .platillo h3 {
     font-size: 16px;
     color: #aa00ff;
     margin-bottom: 10px;
 }
+
 .precio {
     font-size: 18px;
     color: #000000 !important;
@@ -271,12 +270,12 @@ td {
 .platillo img {
     width: 250px;
 }
+
 .platillo p {
     font-size: 16px;
     color: #303030;
     margin-top: 15px;
 }
-
 
 .btn-2 {
     display: inline-block;
@@ -288,7 +287,7 @@ td {
     border-radius: 25px;
 }
 
-.btn-2:hover  {
+.btn-2:hover {
     background-color: #d277ff;
 }
 
@@ -335,12 +334,14 @@ td {
     font-size: 14px;
     margin: 0 50px 15px 0px;
 }
+
 .link ul li a {
     display: inline-block;
     font-size: 16px;
     color: #000000;
     margin-bottom: 10px;
 }
+
 .Socials-2 {
     width: 20px;
     height: 20px;
@@ -365,6 +366,7 @@ td {
     border: 0;
     color: #DFDDE0;
 }
+
 
 
 @media (max-width: 991px) {
@@ -416,9 +418,7 @@ td {
     .Socials-1 {
         display: none;
     }
-    .arrow {
-        display: none;
-    }
+
     .recetas {
         flex-direction: column;
         padding: 0px 30px;
@@ -449,6 +449,10 @@ td {
     }
     .Socials-2 {
         margin-bottom: 15px;
+    }
+    .menu-icono {
+        display: initial;
+        width: 25px;
     }
 
     

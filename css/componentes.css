@@ -23,7 +23,7 @@ img{
 }
 
 body {
-   background-color: #fff;
+    background-color: #fff;
     background-size: cover;
     color: var(--text-color);
 }
@@ -42,6 +42,7 @@ section {
 
 
 /* Header */
+
 
 header {
     position: fixed;
@@ -182,14 +183,14 @@ header {
 
 .shop-content{
     display: grid;
-    grid-template-columns:  repeat(auto-fit,minmax(220px, auto));
-    gap: 1.5rem;
+    grid-template-columns:  repeat(auto-fit,minmax(200px, auto)); /* Decreased min size from 220px to 200px */
+    gap: 5.5rem; 
 }
-
 
 .product-box {
     position: relative;
 }
+
 .product-box:hover {
     padding: 10px;
     border: 3px solid var(--bd-color);
@@ -213,7 +214,6 @@ header {
     font-weight:500 ;
 }
 
-
 .add-cart {
     position: absolute;
     bottom: 0;
@@ -223,6 +223,7 @@ header {
     padding: 10px;
     cursor: pointer
 }
+
 .add-cart:hover {
     background:  hsl(249, 32%, 17%);
 }

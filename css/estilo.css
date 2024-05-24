@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
 }
+
 /*fuente*/
 body{
     font-family: 'Poppins', sans-serif;
@@ -20,14 +21,10 @@ body{
 
 .header{
     background:linear-gradient(to right, #6b008b, #43009b);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 85%, 0 50%);
     height: 110vh;
     padding: 0 20px;
     display: flex;
     position: relative;
-}
-.sombra{
-    filter:drop-shadow(0em 30px 20px #8153ff);
 }
 
 .menu {
@@ -92,7 +89,8 @@ body{
 }
 
 .menu-icono{
-    width: 25px;
+    display: none;
+
 }
 
 .menu-label {
@@ -108,7 +106,19 @@ body{
 .submenu #carrito {
     display: none;
 }
-
+/* CSS */
+.submenu {
+    display: inline-block;
+  }
+  
+  .button-style {
+    vertical-align: middle;
+  }
+  
+  #cart {
+    font-size: 2em; /* Ajusta este valor para cambiar el tamaño del icono del carrito */
+    color: white;
+  }
 .submenu:hover #carrito {
     display: block;
     position: absolute;
@@ -196,6 +206,8 @@ td {
     height: 20px;
     margin-bottom: 20px;
 }
+
+
 
 
 
@@ -499,9 +511,6 @@ footer{
     .Socials-1 {
         display: none;
     }
-    .arrow {
-        display: none;
-    }
     .recetas {
         flex-direction: column;
         padding: 0px 30px;
@@ -537,7 +546,10 @@ footer{
     .button-style {
         font-size: 12px;
     }
-    
+    .menu-icono {
+        display: initial;
+        width: 25px;
+    }
 }
 
 
